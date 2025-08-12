@@ -4,6 +4,27 @@
     <TargetFramework>net8.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <!--Configuração do Pacote -->
+    <PackageId>MoneySancaExtensions</PackageId>
+    <Version>1.0.0</Version>
+    <!--<icon>"Local url"</icon>-->
+    <License>MIT</License>
+    <Authors>Daniel</Authors>
+    <Company>Sanca</Company>
+    <PackageDescription>Extencion to convert decimal to interger</PackageDescription>
+    <Description>Extencion to convert decimal to interger</Description>
+    <RepositoryUrl>https://github.com/danisanca/MoneyExtension/tree/main/MoneyExtension</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/danisanca/MoneyExtension/tree/main/MoneyExtension</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageTags>Money;int;decimal;convert</PackageTags>
+    <RealeaseNotes>Upgrade Performance</RealeaseNotes>
+    <Title>MoneySancaExtensions</Title>
+    <Summary>Extencion to convert decimal to interger</Summary>
   </PropertyGroup>
+<!--Apontando local da inmagem -->
+  <ItemGroup>
+    <None Include="..\Media\icon.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
 
 </Project>
