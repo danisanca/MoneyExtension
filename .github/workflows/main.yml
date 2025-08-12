@@ -29,7 +29,7 @@ jobs:
     
     # Buildando tests
     - name: Build Tests
-      run: dotnet test MoneyExtension/MoneyExtension.Tests.csproj
+      run: dotnet test MoneyExtension.Tests/MoneyExtension.Tests.csproj
       
     # Criando pacote Nuget
     - name: Create the package
