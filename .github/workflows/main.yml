@@ -25,15 +25,15 @@ jobs:
 
     # Buildando aplicação
     - name: Build Aplicação
-      run: dotnet build --configuration Release
+      run: dotnet build MoneyExtension/MoneyExtension.csproj --configuration Release
     
     # Buildando tests
     - name: Build Tests
-      run: dotnet test
+      run: dotnet test MoneyExtension/MoneyExtension.Tests.csproj
       
     # Criando pacote Nuget
     - name: Create the package
-      run: dotnet pack --configuration Release
+      run: dotnet pack MoneyExtension/MoneyExtension.csproj --configuration Release
 
 ## Deploy
 
