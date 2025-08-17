@@ -25,7 +25,7 @@ jobs:
     
     # Habilitando pacote no github
     - name: Add Pacote Git
-    run: dotnet nuget add source "https://nuget.pkg.github.com/danisanca/index.json" `
+      run: dotnet nuget add source "https://nuget.pkg.github.com/danisanca/index.json" `
         --name "github" `
         --username danisanca `
         --password ${{ secrets.CUSTOM_GITHUB_TOKEN }} `
