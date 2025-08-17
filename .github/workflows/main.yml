@@ -22,6 +22,10 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8.0.x
+    
+    # Habilitando pacote no github
+    - name: Add Pacote Git
+      run: dotnet nuget add source https://nuget.pkg.github.com/danisanca/index.json -n githubpackage -u danisanca -p ${{secrets.CUSTOM_GITHUB_TOKEN}} --store-password-in-clear-text
 
     # Buildando aplicação
     - name: Build Aplicação
