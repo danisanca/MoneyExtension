@@ -6,7 +6,7 @@
     <Nullable>enable</Nullable>
     <!--Configuração do Pacote -->
     <PackageId>MoneySancaExtensions</PackageId>
-    <Version>1.0.1</Version>
+    <Version>1.0.2</Version>
     <!--<icon>"Local url"</icon>-->
     <License>MIT</License>
     <Authors>Daniel</Authors>
@@ -25,6 +25,9 @@
 <!--Apontando local da inmagem -->
   <ItemGroup>
     <None Include="..\Media\icon.png" Pack="true" PackagePath="\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MyCustomPrivatePackage" Version="1.0.0" />
   </ItemGroup>
 
 </Project>
